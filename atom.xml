@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-20T07:31:05.273Z</updated>
+  <updated>2019-10-20T16:54:21.279Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,19 +17,18 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2019/10/26/hello-world/"/>
-    <id>http://yoursite.com/2019/10/26/hello-world/</id>
-    <published>2019-10-26T02:23:21.000Z</published>
-    <updated>2019-10-20T07:31:05.273Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <title>LeanCloud</title>
+    <link href="http://yoursite.com/2019/10/21/LeanCloud/"/>
+    <id>http://yoursite.com/2019/10/21/LeanCloud/</id>
+    <published>2019-10-20T16:45:03.000Z</published>
+    <updated>2019-10-20T16:54:21.279Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+        &lt;p&gt;添加评论&lt;br&gt;添加评论很简单，在主题配置文件中找到以下部分：&lt;/p&gt;
+&lt;p&gt;valine:&lt;br&gt;  enable: true&lt;br&gt;  appid:  # your leancloud application appid&lt;br&gt;  appkey:  # your lea
       
     
     </summary>
@@ -46,8 +45,6 @@
     <id>http://yoursite.com/2019/10/20/haiyi-zj-gz/</id>
     <published>2019-10-20T07:23:31.000Z</published>
     <updated>2019-10-20T07:28:06.761Z</updated>
-    
-    <content type="html"><![CDATA[<p>1.数据清洗后，原数据字段要保留，尤其是字典<br>2.数据处理或者有日常调度的数据，必须有 更新时间字段<br>3.给其他单位协调到的数据，一定要核实，给出的数据是否符合我们的要求，包括：数据量、字段等。在民航后期协调来的数据字段项目比前期的少，量也不够，吃亏不少<br>4.建类和建方法必须加注释。<br>5.svn提交的时候必须要加注释。<br>6.页面新增数据的时候注意input和textarea长度需要根据数据库中字段进行长度校验。<br>7.注意代码的缩进，别太参差不齐。<br>8.建表要加注释，表注释要非常清楚，而且要有基本索引。<br>9.对象的使用注意非空判断。<br>10.数据汇集的时候不要把字段丢掉，比如民航阿里推送的数据明明有手机号，可以汇总到人头总表，却没有手机号了<br>11.服务器一定要利用用户提供的，别瞎倒腾，最后如果服务器出了问题或者断电等，不好解释，而且工作量还会大很多<br>12.数据库服务器一定要跟 其他应用服务器分开，不然，出现让人家重启一个应用服务， 结果数据库直接宕机的问题<br>13. 数据一定要清洗去重再入库，如果清洗规则变了 ，历史的也要重新按照新规则清洗<br>14.不确定的事情不要贸然评估并给用户承诺（经典答复：回去落实一下，再汇报）<br>15.重要数据清洗前，一定要进行备份<br>16.对生产库中的数据进行操作，一定不要用truncate<br>17.录屏的时候，把电脑任务栏清理下，不要全国建模视频上，还有uep的图标<br>18.专业人干专业事，稍微勉强的，尽量别接，抛出去，总比做差了，用户会认为我们不专业。–民航剪辑事件<br>19.数据清洗的时候，如果有字典翻译不过来的时候，应该反查下都什么字典没能翻译，比如KOS，西哈努克，东南亚关键地区竟然没翻译<br>20.项目经理或者小组负责人不需要做具体任务，要腾出充足的时间思考，分析用户意图，尽量让小组成员能轻松准确无返工的完成工作<br>21.紧急的事情紧急做法（只要达到目标，可以适当走捷径），不要妄图在几天的紧张氛围内把每一个细节都处理到位，这样会让用户等待。<br>22.不要妄图用关系数据库实现一亿以上数表关联，要尽量的加更多的条件过滤数据。 聚合表可以适当有，但是像“频繁前往东南亚和云南地区”这种，千万不要妄图先得到全轨迹中频繁前往的，再组合得到红色人员符合频繁的、橙色人员符合频繁的；而是应该分开用更多的条件过滤出数据，这样会更高效 。—这回被用户带沟里去了<br>23.列表显示内容时，如果内容是固定的，单元格的宽度需要写死，并且居中，如果内容长度不一，则左对齐，超出内容用点点点代替<br>24.列表展示内容需要与Excel导出一致，即：列表上是个代码，导出也要是个代码<br>25.外网开发，内网部署，是原则。拍错应该看日志，而不是用uep调试。我们不应该太依赖内网，更不应该太依赖uep代码调试<br>26.捕获异常却不处理异常，是很愚蠢的，纯属于自己给自己挖坑<br>27.structs中action中的 业务方法名字，一律不准用get开头，否则会被调用两次，浪费服务器资源。</p>]]></content>
     
     <summary type="html">
     
@@ -71,8 +68,6 @@
     <published>2019-10-18T13:03:00.000Z</published>
     <updated>2019-10-20T07:27:15.724Z</updated>
     
-    <content type="html"><![CDATA[<p>Hexo NexT主题中添加网页音乐播放器功能<br> Posted on 2018-05-26 |  In GitBlog |  Visitors: 4666<br>为博客添加网页音乐播放器功能</p><p>download<br>点击访问Aplayer源码：GitHub Aplayer。下载到本地，解压后将dist文件夹复制到themes\next\source文件夹下。</p><p>music.js<br>新建themes\next\source\dist\music.js文件，添加内容：</p><p>const ap = new APlayer({<br>    container: document.getElementById(‘aplayer’),<br>    fixed: true,<br>    autoplay: false,<br>    audio: [<br>      {<br>        name: “PDD洪荒之力”,<br>        artist: ‘徐梦圆’,<br>        url: ‘<a href="http://up.mcyt.net/?down/39868.mp3&#39;" target="_blank" rel="noopener">http://up.mcyt.net/?down/39868.mp3&#39;</a>,<br>        cover: ‘<a href="http://oeff2vktt.bkt.clouddn.com/image/84.jpg&#39;" target="_blank" rel="noopener">http://oeff2vktt.bkt.clouddn.com/image/84.jpg&#39;</a>,<br>      },<br>      {<br>        name: ‘9420’,<br>        artist: ‘麦小兜’,<br>        url: ‘<a href="http://up.mcyt.net/?down/45967.mp3&#39;" target="_blank" rel="noopener">http://up.mcyt.net/?down/45967.mp3&#39;</a>,<br>        cover: ‘<a href="http://oeff2vktt.bkt.clouddn.com/image/8.jpg&#39;" target="_blank" rel="noopener">http://oeff2vktt.bkt.clouddn.com/image/8.jpg&#39;</a>,<br>      },<br>      {<br>        name: ‘风筝误’,<br>        artist: ‘刘珂矣’,<br>        url: ‘<a href="http://up.mcyt.net/?down/46644.mp3&#39;" target="_blank" rel="noopener">http://up.mcyt.net/?down/46644.mp3&#39;</a>,<br>        cover: ‘<a href="http://oeff2vktt.bkt.clouddn.com/image/96.jpg&#39;" target="_blank" rel="noopener">http://oeff2vktt.bkt.clouddn.com/image/96.jpg&#39;</a>,<br>      }<br>    ]<br>});<br>源码中对应的参数解释，这边都有： Aplayer 中文文档</p><p>audio对应的便是音频文件，所以音乐播放器需要播放的音乐是需要自己进行相关信息（如歌曲链接、歌词、封面等）的配置。这里放一个mp3音乐外链网站：<a href="http://up.mcyt.net/" target="_blank" rel="noopener">http://up.mcyt.net/</a> ，搜索对应的音乐，然后复制url和右击封面图片链接粘贴到对应的位置上就行了。</p><p>注：由于该外链网站没有歌词链接，我这边没有进行配置，所以播放器在播放音乐时点击歌词是没有显示的。</p><p>_layout.swig<br>打开themes\next\layout_layout.swig文件，将</p><link rel="stylesheet" href="/dist/APlayer.min.css"><div id="aplayer"></div><script type="text/javascript" src="/dist/APlayer.min.js"></script><script type="text/javascript" src="/dist/music.js"></script>添加到<body itemscope ...>后面就行，即在<body></body>里面。<p>重新生成，访问页面，就能看到左下角的音乐播放器了。</p>]]></content>
-    
     <summary type="html">
     
       
@@ -86,6 +81,28 @@
     
     
       <category term="hexo next" scheme="http://yoursite.com/tags/hexo-next/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2019/10/16/hello-world/"/>
+    <id>http://yoursite.com/2019/10/16/hello-world/</id>
+    <published>2019-10-16T02:23:21.000Z</published>
+    <updated>2019-10-20T16:57:27.780Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
